@@ -1,0 +1,55 @@
+.section2{
+    text-align: center;
+    display: grid;
+    margin-top: 3rem;
+}
+.illustration-side{
+    width: 100%;
+}
+.easyToImplement-illustration{
+    height: 100%;
+    width: 100%;
+    /* margin-left: 1.5rem; */
+}
+.section2 h2{
+    color: #36536B;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+.section2 p{
+    color: #6C8294;
+    font-family: Public Sans;
+    line-height: 1.5rem;
+    padding: 0 3rem;
+}
+
+
+/* tablet */
+@media(min-width:541px){
+    .section2{
+        padding: 0 3rem;
+    }
+}
+
+
+/* laptops */
+@media(min-width:769px){
+    .section2{
+        padding: 1rem;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        text-align: left;
+    }
+    .section2-text-side{
+        padding: 2rem;
+    }
+    .section2 h2{
+        font-size: 2rem;
+    }
+    .section2 p{
+        padding: 0;
+    }
+}

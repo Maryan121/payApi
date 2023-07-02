@@ -1,0 +1,81 @@
+.section1{
+    background-color: var(--Mirage-Blue);
+    padding: 2rem 2rem;
+    display: grid;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+.patteners{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.7rem;
+}
+.who-we-work-with{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.who-we-work-with h2{
+    color: #fbfcfe;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.who-we-work-with p{
+    margin-top: 1rem;
+    color: #fbfcfe86;
+    font-family: Public Sans;
+    line-height: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.who-we-work-with a{
+    text-decoration: none;
+    color: #fbfcfe;
+    border: #fbfcfe solid 1px;
+    padding: .7rem .9rem;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    font-family: Public Sans;
+}
+.who-we-work-with a:hover, .who-we-work-with a:focus{
+    background-color: #fbfcfe;
+    color: #1B262F;
+}
+
+/* tablet */
+@media(min-width:541px){
+    .section1{
+        padding:4rem;
+        justify-content: center;
+        gap: 0;
+    }
+    .patteners{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .who-we-work-with{
+        padding: 4rem;
+    }
+}
+
+/* laptops */
+@media(min-width:1005px){
+    .section1{
+        grid-template-columns: repeat(2,1fr);
+        position: relative;
+        gap: 3.5rem;
+    }
+    .who-we-work-with{
+        text-align: left;
+    }
+    .who-we-work-with h2{
+        font-size: 2.5rem;
+    }
+    .patteners{
+        position: absolute;
+        right: 7%;
+        top: 43%;
+
+    }
+}
