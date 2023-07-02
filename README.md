@@ -1,4 +1,4 @@
-#PayAPI multi-page website
+# PayAPI multi-page website
 
 ![Design preview for the PayAPI multi-page website coding challenge](./preview.jpg)
 
