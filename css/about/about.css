@@ -1,9 +1,7 @@
 .main-container .action-part{
-    padding: 0 3.7rem;
+    padding: 0 3rem;
 }
 .about-cont{
-    /* margin-top: 3rem; */
-    /* padding: 2rem; */
     text-align: center;
     font-family: DM serif Display;
 
@@ -34,6 +32,7 @@ img{
 }
 .info-title{
     color: #36536B;
+    /* color: #36536b77; */
     letter-spacing: 1px;
     font-family: Public Sans;
 }
@@ -49,8 +48,24 @@ img{
     gap: 1rem;
 }
 
-
-
+.teams{
+    display: grid;
+    gap: 2rem;
+    padding: 1.2rem 0;
+    border-top: #36536b42 solid 1.5px;
+    border-bottom: #36536b42 solid 1.5px;
+    margin: 1rem;
+}
+.teams p{
+    color: #36536B;
+    font-family: Public Sans;
+}
+.teams strong{
+    font-size: 3rem;
+    color: #BA4270;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
 @media(min-width:541px){
     .mobile-main-image{
         display: none;
@@ -76,6 +91,16 @@ img{
     .info-para{
         text-align: left;
     }
+    .teams{
+        border: none;
+        grid-template-columns: repeat(3,1fr);
+        padding: 2rem;
+    }
+    .teams .item{
+        padding: 1rem 0;
+        border-top: #36536b42 solid 1px;
+        border-bottom: #36536b42 solid 1px;
+    }
 }
 
 @media(min-width:769px){
@@ -97,9 +122,13 @@ img{
     .desktop-main-image{
         display: block;
     }
+    .teams{
+        padding: 3rem 7rem;
+    }
 }
 @media(min-width:1120px){
     .about-main-title{
         width: 40%;
     }
 }
+

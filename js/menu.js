@@ -10,3 +10,5 @@ menuDisplayer.addEventListener('click',function(){
 closeIcon.addEventListener('click',()=>{
     nav.style.display = 'none';
 })
+
+
