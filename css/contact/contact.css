@@ -1,0 +1,197 @@
+.contact-container .action-part{
+    padding: 1rem 2rem;
+}
+.pattern{
+    width: 50%;
+    height: 60vh;
+    background-color: #36536b1e;
+    position: absolute;
+    top: -15rem;
+    border-radius: 0 0 0 50rem;
+    right: 0;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.Title{
+    text-align: center;
+    color:#36536B;
+    letter-spacing: 1px;
+    padding: 1.5rem;
+}
+main{
+    padding: 1rem;
+    font-family: DM serif Display;
+}
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+form .f{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: #36536B;
+    font-family: Public Sans;
+    text-transform: capitalize;
+    padding: 0 .7rem;
+}
+input,textarea{
+    color: #36536B;
+    font-size: 1.1rem;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #36536B;
+}
+form input{
+    padding: .3rem .7rem;
+}
+
+form textarea{
+    padding: .1rem .7rem;    
+    resize: none;
+
+}
+.checkbox-sec{
+    display: flex;
+    gap: .7rem;
+}
+input[type="checkbox"]{
+    appearance: none;
+    background: #979797;
+    width: 30px;
+    height: 25px;
+    border-radius: .2rem;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 1000;
+    color: #fff;
+    display: none;
+}
+input[type="checkbox"]:checked{
+    background-color: #BA4270;
+}
+input[type="checkbox"]:checked:after{
+    display: flex;
+}
+.checkbox-sec span{
+    color: #36536B;
+    font-family: Public Sans;
+    line-height: 1.5rem;
+}
+
+.submit{
+    background: none;
+    border: solid #36536B 2px;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    margin-left: .3rem;
+    font-family: Public Sans;
+    color: #36536B;
+    font-size: 1.1rem;
+    align-self: flex-start;
+    cursor: pointer;
+}
+.submit:hover,.submit:focus{
+    background-color: #36536B;
+    color: #fff;
+}
+
+.innovators{
+    margin-top: 2.5rem;
+}
+.innovators h2{
+    color: #36536bc5;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.paterners{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+}
+
+
+
+@media(min-width:541px){
+    .Title{
+        font-size: 2.5rem;        
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contact-container form{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .innovators h2{
+        font-size: 2.5rem;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .innovators{
+        display: grid;
+        place-content: center;
+    }
+    .paterners{
+        width: 95%;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0 auto;
+    }
+}
+
+
+
+@media(min-width:769px){
+    .pattern{
+        overflow-x: hidden;
+        top: 0;
+        width: 30%;
+        height: 30vh;
+        border-radius: 0 0 0 50rem ;    
+    }
+    .Title{
+        text-align: left;
+        padding: 0;
+        max-width: 60%;
+        margin: 0;
+        margin:3rem 0 1rem 5rem;
+    }
+    .sub-cont{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  
+    .innovators{
+        margin: 0;
+        margin-top: -1.5rem;
+        align-self: center;
+        place-content: flex-start;
+    }
+    .innovators h2{
+        text-align: left;
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+    .contact-container .action-part{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .paterners{
+        grid-template-columns: repeat(2,2fr);
+    }
+    
+}

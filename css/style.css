@@ -99,19 +99,6 @@ nav ul li{
 header{
     z-index: 1;
 }
-/* header::after{
-        display: block;
-        width: 100%;
-        height: 80vh;
-        background-color: #36536b25;
-        content: '';
-        position: absolute;
-        top: -400%;
-        border-radius: 45%;
-        right: 0;
-        z-index: -1;
-
-    } */
 
 
 
@@ -122,27 +109,7 @@ header{
         padding: 1.5rem 2rem;
     }
     
-   
-    /* .closeIcon,hr{
-        display: none;
-    } */
-    /* nav{
-        position: static;
-        height: fit-content;
-        display: flex;
-        align-items: center;
-        
-        width: 100%;
-        background: none;
-        /* margin-top: 3.5rem; */
-       
-    /* } */
-    /* nav ul{
-        flex-direction: row;
-        align-items: center;
-        margin: 0;
-        width: fit-content;
-    } */
+
     .nav-links{
         font-size: 1rem;
         /* color: #36536B; */
@@ -163,7 +130,6 @@ header{
 }
 
 @media (min-width: 769px){
-   
     header{
         padding: 1.5rem 3rem;
         display: flex;
@@ -212,16 +178,5 @@ header{
     #menuDisplayer{
         display: none;
     }
-    /* header::after{
-        width: 50%;
-        right: -10rem;
-        height: 80vh;
-        top: -30%;
-    } */
-    /* .container{
-        overflow-x: hidden;
-        border: solid 2px red;
-    } */
-   
     
 }
