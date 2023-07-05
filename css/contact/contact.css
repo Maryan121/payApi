@@ -18,6 +18,7 @@
     color:#36536B;
     letter-spacing: 1px;
     padding: 1.5rem;
+    /* margin-top: 2rem; */
 }
 main{
     padding: 1rem;
@@ -126,8 +127,32 @@ input[type="checkbox"]:checked:after{
 }
 
 
+.error, .error1, .error2{
+    color: #FF0000;
+    font-family: Public Sans;
+    margin-left: .8rem;
+    padding-top: .4rem;
+    font-size: .9rem;
+}
+.thanks-message{
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Public Sans;
+    padding: 1.2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    background-color: #36536bce;
+    display: none;
+}
 
 @media(min-width:541px){
+    .thanks-message{
+        width: 60%;
+        margin: 0 auto;
+    }
     .Title{
         font-size: 2.5rem;        
         width: 80%;
@@ -145,6 +170,7 @@ input[type="checkbox"]:checked:after{
     .innovators{
         display: grid;
         place-content: center;
+        gap: 2.5rem;
     }
     .paterners{
         width: 95%;
@@ -180,6 +206,7 @@ input[type="checkbox"]:checked:after{
         margin-top: -1.5rem;
         align-self: center;
         place-content: flex-start;
+        gap: 0;
     }
     .innovators h2{
         text-align: left;
